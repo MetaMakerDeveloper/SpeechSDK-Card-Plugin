@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private String TAG = "MainActivity";
     private WebView webView;
     // 此处填写 AI 数字人名片服务部署的地址
-    private String webUrl = "http://192.168.14.86:5500/";
+    private String webUrl = "https://xxxxxx";
     private ASRManager asrManager;
     private Map<String, String> params;
 
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
             OkHttpClient okHttpClient = new OkHttpClient();
 
             String requestUrl = "https://human-screen-v3.metamaker.cn/t_device/bind";
-            String appKey = "5e5d7fd34ddb48aaa4844cf11fe8f41f";
+            String appKey = "xxxxxx"; // xxxxxx为需要替换的appKey
             // 填写 AndroidId
             String deviceNo = Settings.System.getString(this.getApplicationContext().getContentResolver(), Settings.Secure.ANDROID_ID);
             // 填写 SDK 版本
