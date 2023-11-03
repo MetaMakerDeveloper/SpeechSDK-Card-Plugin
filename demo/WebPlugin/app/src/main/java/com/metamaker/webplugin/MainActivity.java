@@ -228,7 +228,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onWaekupSuccess() {
+            public void onWakeupSuccess() {
                 sendMsgToWeb("AsrState", "wakeup", "success", null, false);
             }
 
